@@ -11,9 +11,9 @@
         <item>
                 <title>Enigma 4 Beta 1</title>
                 <description>We're excited to bring you the first update to Enigma in almost a year!</description>
-                <version>4</version>
+                <version super="4" phase="2" sub="1">21</version>
                 <link>https://github.com/Kaelri/Enigma/downloads/</link>
-                <guid>v4b1</guid>
+                <guid>21v4b1</guid>
                 <pubDate>Tue, 24 Jul 2012 00:00:00 +0000 </pubDate>
         </item>
  
