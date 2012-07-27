@@ -4,9 +4,20 @@
         <title>Enigma Updates</title>
         <description>Latest releases for Enigma, a featured suite for the Windows desktop monitoring tool, Rainmeter.</description>
         <link>http://enigma.kaelri.com/</link>
-        <lastBuildDate>Tue, 24 Jul 2012 00:00:00 +0000 </lastBuildDate>
-        <pubDate>Tue, 24 Jul 2012 00:00:00 +0000 </pubDate>
+        <lastBuildDate>Fri, 27 Jul 2012 01:40:00 +0000 </lastBuildDate>
+        <pubDate>Fri, 27 Jul 2012 01:40:00 +0000 </pubDate>
         <ttl>1440</ttl>
+ 
+ https://github.com/Kaelri/Enigma/downloads
+ 
+         <item>
+                <title>Enigma 4 Beta 2</title>
+                <description>Bug fixes, and a last-minute new "Run" feature for you to try.</description>
+                <version super="4" phase="2" sub="2">22</version>
+                <link>https://github.com/Kaelri/Enigma/downloads/</link>
+                <guid>21v4b2</guid>
+                <pubDate>Fri, 27 Jul 2012 01:40:00 +0000 </pubDate>
+        </item>
  
         <item>
                 <title>Enigma 4 Beta 1</title>
