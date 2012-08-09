@@ -14,7 +14,7 @@
 				<span class="{% if page.parent == 'downloads' %}current{% endif %}"><a href="/downloads.html">Downloads</a></span>
 				<span class="{% if page.parent == 'support' %}current{% endif %}"><a href="/support.html">Support</a></span>
 				<span class="{% if page.parent == 'development' %}current{% endif %}"><a href="/development.html">Development</a></span>
-				<span class="{% if page.parent == 'contact' %}current"><a href="/contact.html">Contact</a></span>
+				<span class="{% if page.parent == 'contact' %}current{% endif %}"><a href="/contact.html">Contact</a></span>
 			</div>
 			<div id="title">
 				<a href="http://enigma.kaelri.com/">Enigma</a>
@@ -26,7 +26,7 @@
 		</div>
 
 		<div id="footer">
-			<div class="copy">&copy; 2008-2012 <a href="http://kaelri.com">M. Engard</a></div>
+			<div class="copy">&copy; 2008-{{ site.time | date: "%Y" }} <a href="http://kaelri.com">M. Engard</a></div>
 		</div>
 	</div>
 </body>
