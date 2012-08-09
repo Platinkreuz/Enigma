@@ -1,0 +1,33 @@
+<html>
+<head>
+	<title>Enigma{% if page.title %} &#8226; {{ page.title }}{% endif %}</title>
+	<base href="http://kaelri.github.com/Enigma/" target="_blank" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="stylesheet"    href="style.css" type="text/css" media="screen"  />
+	<link rel="alternate"     href="http://kaelri.github.com/Enigma/update/version.xml" type="application/rss+xml" />
+</head>
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<div id="menu">
+				<span class="{% if page.parent == 'about' %}current{% endif %}"><a href="http://enigma.kaelri.com/">About</a></span>
+				<span class="{% if page.parent == 'downloads' %}current{% endif %}"><a href="http://enigma.kaelri.com/downloads">Downloads</a></span>
+				<span class="{% if page.parent == 'support' %}current{% endif %}"><a href="http://enigma.kaelri.com/support">Support</a></span>
+				<span class="{% if page.parent == 'development' %}current{% endif %}"><a href="http://enigma.kaelri.com/development">Development</a></span>
+				<span class="{% if page.parent == 'contact' %}current"><a href="http://enigma.kaelri.com/contact">Contact</a></span>
+			</div>
+			<div id="title">
+				<a href="http://enigma.kaelri.com/">Enigma</a>
+			</div>
+		</div>
+
+		<div id="content">
+			{{ content }}
+		</div>
+
+		<div id="footer">
+			<div class="copy">&copy; 2008-{{ site.time | date: "%Y" }} <a href="http://kaelri.com">M. Engard</a></div>
+		</div>
+	</div>
+</body>
+</html>
