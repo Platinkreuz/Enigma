@@ -1,0 +1,347 @@
+/* Universal */
+
+body {
+	background: #151515;
+	margin: 0px;
+	padding: 0px; 
+	border: 0px;
+}
+
+/* META */
+
+#wrapper {
+	min-height: 100%;
+	position:relative;
+}
+
+#header, #footer {
+	background: #151515 url(http://enigma.kaelri.com/images/taskbar-top.jpg) repeat-x;
+	width: 100%;
+	height: 33;
+	min-width: 375;
+}
+
+#header {
+	padding-bottom: 1em;
+}
+
+#footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+/* TITLE, MENU & COPYRIGHT */
+
+#title, #menu, .copy {
+	font-family: Trebuchet MS, Sans-Serif;
+	color: #777777;
+}
+
+#title {
+	padding-top: 4px;
+	padding-left: 20px;
+	font-size: 12pt;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 15px;
+}
+
+#title a:link, #title a:visited {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+#title a:hover {
+	color: #D88E19;
+	text-decoration: none;
+}
+
+#menu {
+	float: right;
+	padding-top: 7px;
+	padding-right: 20px;
+	text-align: right;
+	font-size: 10pt;
+	word-spacing: 30px;
+}
+
+#menu a:link, #menu a:visited {
+	color: #777;
+	text-decoration: none;
+}
+
+#menu a:hover {
+	color: #D88E19;
+	text-decoration: underline;
+}
+
+#menu .current a:link, #menu .current a:visited {
+	color: #FFF;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.copy {
+	padding-right: 20px;
+	padding-top: 8px;
+	text-align: right;
+	font-size: 8pt;
+}
+
+.copy a:link, .copy a:visited {
+	color: #777;
+	text-decoration: none;
+}
+
+.copy a:hover {
+	color: #D88E19;
+	text-decoration: underline;
+}
+
+/* CONTENT*/
+
+#content {
+	clear: both;
+	max-width: 800;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 20 66 20;
+	font-family: Calibri;
+	color: #BBB;
+}
+
+#content p {
+	margin-top: 0;
+	margin-bottom: 1em;
+}
+
+#content h2, #content h3, #content h4 {
+	clear: both;
+	margin-top: 25;
+	color: #DDD;
+	border-bottom: 1px solid #444;
+}
+
+#content h2 {
+	color: #FFF;
+}
+
+#content h4 {
+	border-bottom-style: dotted;
+}
+
+#content strong {
+	color: #FFF;
+}
+
+#content a:link, #content a:visited {
+	color: #80C0FF;
+	text-decoration: none;
+	/* font-weight: bold; */
+}
+
+#content a:hover {
+	color: #D88E19;
+	text-decoration: underline;
+} 
+
+#content ul {
+	list-style-type: circle;
+}
+
+ #content code, #content pre {
+	background: #080808;
+	padding: 10px;
+	border: 1px;
+	border-color: #303030;
+	border-style: dashed;
+	margin-top: 25px;
+	overflow: auto;
+}
+
+/* HOME */
+
+#preview {
+	width: 700;
+	color: #777;
+	font-size: 10pt;
+	font-style: italic;
+	text-align: left;
+	margin-top: 1em;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 2em;
+}
+
+#preview img{
+	border: none;
+	-moz-box-shadow: 3px 3px 4px #000;
+	-webkit-box-shadow: 3px 3px 4px #000;
+	box-shadow: 3px 3px 4px #000;
+	margin-top: 1em;
+	margin-bottom: 5px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#preview p {
+	width: 700;
+	text-align: right;
+	font-size: 8pt;
+	font-weight: bold;
+}
+
+#preview a:link, #preview a:visited {
+	color: #777;
+	font-weight: bold;
+}
+
+#preview a:hover {
+	color: #D88E19;
+	text-decoration: underline;
+}
+
+/* DOWNLOADS */
+
+.thumbnail {
+	border: none;
+	-moz-box-shadow: 3px 3px 4px #000;
+	-webkit-box-shadow: 3px 3px 4px #000;
+	box-shadow: 3px 3px 4px #000;
+}
+
+.status a {
+	font-weight: bold;
+}
+
+.status table {
+	float: right;
+	width: 700;
+}
+
+.status-header td {
+	font-size: 8pt;
+	color: #BBB;
+}
+
+.status-body td {
+	border-top: solid 1px #444;
+	border-top-style: dotted;
+}
+
+.status td {
+	vertical-align: top;
+}
+
+.status-version {
+	color: #FFF;
+	font-weight: bold;
+}
+
+.status-number {
+	color: #FFF;
+}
+
+.status-progress {
+	font-size: 10pt;
+	color: #BBB;
+}
+
+.status-download {
+	color: #666;
+	font-size: 8pt;
+}
+
+.status-download a:link, .status-download a:visited {
+	font-size: 10pt;
+}
+
+/* MANUAL */
+
+.aside {
+	color: #777;
+	/* font-style: italic; */
+	font-size: 8pt;
+}
+
+#content blockquote {
+	border: 1px dotted #444;
+}
+
+.floatimage {
+	/* width: 250; */
+	float: right;
+	margin: 10;
+	border: none;
+	-moz-box-shadow: 3px 3px 4px #000;
+	-webkit-box-shadow: 3px 3px 4px #000;
+	box-shadow: 3px 3px 4px #000;
+}
+
+#nav-top {
+	padding: 10px;
+	font-size: 10pt;
+	border-bottom: 1px dotted #444;
+}
+
+#nav-bottom {
+	padding: 10px;
+	margin-top: 2em;
+	font-size: 10pt;
+	border-top: 1px dotted #444;
+}
+
+/* SUPPORT & DEVELOPMENT */
+
+.floaticon {
+	width: 75;
+	clear: right;
+	float: right;
+	padding-left: 10;
+}
+
+.floaticoncc {
+	width: 59;
+	clear: right;
+	float: right;
+	padding: 8 8 8 18;
+}
+
+.cc {
+	width: 100%;
+	max-width: 800;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 1em;
+}
+
+.cc td {
+	align: center;
+}
+
+.paypal {
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 1em;
+}
+
+/* CONTACT */
+
+.contact {
+	border-bottom: 1px dotted #262626;
+	padding: 5px 0 5px 0;
+	clear: left;
+	overflow: auto;
+}
+
+.contact-name, .contact-value {
+	width: 200px;
+	float: left;
+	margin: 0;
+	vertical-align: top;
+}
+
+.contact-last {
+	border-bottom: none;
+}
