@@ -10,7 +10,7 @@
 	
 	<item>
 		<title>Enigma 4 Patch 1</title>
-		<description>Bug fixes</description>
+		<description>Bug fixes and performance improvements on the way to Enigma 5.</description>
 		<version super="4" phase="3" sub="2">24</version>
 		<link>https://github.com/downloads/Kaelri/Enigma/Enigma4Patch1.rmskin</link>
 		<guid>24v4c2</guid>
