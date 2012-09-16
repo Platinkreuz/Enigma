@@ -1,41 +1,47 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
-        <title>Enigma Updates</title>
-        <description>Latest releases for Enigma, a featured suite for the Windows desktop monitoring tool, Rainmeter.</description>
-        <link>http://enigma.kaelri.com/</link>
-        <lastBuildDate>Tue, 7 Aug 2012 21:16:00 +0000 </lastBuildDate>
-        <pubDate>Tue, 7 Aug 2012 21:16:00 +0000 </pubDate>
-        <ttl>1440</ttl>
- 
- https://github.com/Kaelri/Enigma/downloads
- 
-          <item>
-                <title>Enigma 4</title>
-                <description>Final release version of Enigma 4.0.</description>
-                <version super="4" phase="3" sub="1">23</version>
-                <link>https://github.com/downloads/Kaelri/Enigma/Enigma4.rmskin</link>
-                <guid>23v4c1</guid>
-                <pubDate>Tue, 7 Aug 2012 21:16:00 +0000 </pubDate>
-        </item>
- 
-         <item>
-                <title>Enigma 4 Beta 2</title>
-                <description>Bug fixes, and a last-minute new "Run" feature for you to try.</description>
-                <version super="4" phase="2" sub="2">22</version>
-                <link>https://github.com/Kaelri/Enigma/downloads/</link>
-                <guid>22v4b2</guid>
-                <pubDate>Fri, 27 Jul 2012 01:40:00 +0000 </pubDate>
-        </item>
- 
-        <item>
-                <title>Enigma 4 Beta 1</title>
-                <description>We're excited to bring you the first update to Enigma in almost a year!</description>
-                <version super="4" phase="2" sub="1">21</version>
-                <link>https://github.com/Kaelri/Enigma/downloads/</link>
-                <guid>21v4b1</guid>
-                <pubDate>Tue, 24 Jul 2012 00:00:00 +0000 </pubDate>
-        </item>
- 
+	<title>Enigma Updates</title>
+	<description>Latest releases for Enigma, a featured suite for the Windows desktop monitoring tool, Rainmeter.</description>
+	<link>http://enigma.kaelri.com/</link>
+	<lastBuildDate>Sun, 16 Sep 2012 17:20:00 +0000 </lastBuildDate>
+	<pubDate>Sun, 16 Sep 2012 17:20:00 +0000 </pubDate>
+	<ttl>1440</ttl>
+	
+	<item>
+		<title>Enigma 4 Patch 1</title>
+		<description>Bug fixes</description>
+		<version super="4" phase="3" sub="2">24</version>
+		<link>https://github.com/downloads/Kaelri/Enigma/Enigma4Patch1.rmskin</link>
+		<guid>24v4c2</guid>
+		<pubDate>Sun, 16 Sep 2012 17:20:00 +0000 </pubDate>
+	</item>
+	
+	<item>
+		<title>Enigma 4</title>
+		<description>Final release version of Enigma 4.0.</description>
+		<version super="4" phase="3" sub="1">23</version>
+		<link>https://github.com/downloads/Kaelri/Enigma/Enigma4.rmskin</link>
+		<guid>23v4c1</guid>
+		<pubDate>Tue, 7 Aug 2012 21:16:00 +0000 </pubDate>
+	</item>
+	
+	<item>
+		<title>Enigma 4 Beta 2</title>
+		<description>Bug fixes, and a last-minute new "Run" feature for you to try.</description>
+		<version super="4" phase="2" sub="2">22</version>
+		<link>https://github.com/Kaelri/Enigma/downloads/</link>
+		<guid>22v4b2</guid>
+		<pubDate>Fri, 27 Jul 2012 01:40:00 +0000 </pubDate>
+	</item>
+	
+	<item>
+		<title>Enigma 4 Beta 1</title>
+		<description>We're excited to bring you the first update to Enigma in almost a year!</description>
+		<version super="4" phase="2" sub="1">21</version>
+		<link>https://github.com/Kaelri/Enigma/downloads/</link>
+		<guid>21v4b1</guid>
+		<pubDate>Tue, 24 Jul 2012 00:00:00 +0000 </pubDate>
+	</item>
 </channel>
 </rss>
