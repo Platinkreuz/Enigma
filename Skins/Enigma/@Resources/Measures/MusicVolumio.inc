@@ -1,49 +1,56 @@
 [Variables]
 VolumioURL=http://192.168.0.118/_player_engine.php
 
-[MeasureParent]
+;[MeasureParent]
+;Measure=Plugin
+;Plugin=WebParser
+;Url=#VolumioURL#
+;RegExp=.*"repeat":"(.*?)","random":"(.*?)".*"state":"(.*?)".*(?(?="time")"time":"(.*?)","elapsed":"(.*?)".*"song_percent":(.*?),|"song_percent":(.*?),"elapsed":"(.*?)","time":(.*?),).*"currentartist":"*(.*?)"*,"currentsong":"*(.*?)"*,"currentalbum":"*(.*?)"*,.*
+;RegExp=.*"repeat":"(.*?)","random":"(.*?)".*"state":"(.*?)".*"time":"(.*?)","elapsed":"(.*?)".*"song_percent":(.*?),.*"currentartist":"*(.*?)"*,"currentsong":"*(.*?)"*,"currentalbum":"*(.*?)"*,.*
+;UpdateRate=1
+
+[MeasureParent1]
 Measure=Plugin
 Plugin=WebParser
-;Url=http://volumio.local/_player_engine.php
 Url=#VolumioURL#
-RegExp=.*"repeat":"(.*?)","random":"(.*?)".*"state":"(.*?)".*"time":"(.*?)","elapsed":"(.*?)".*"song_percent":(.*?),.*"currentartist":"*(.*?)"*,"currentsong":"*(.*?)"*,"currentalbum":"*(.*?)"*,.*
+RegExp='"repeat":"(.*?)","random":"(.*?)".*"state":"(.*?)",'
 UpdateRate=1
 
-;[MeasurePing]
-;Measure=Plugin
-;Plugin=PingPlugin
-;DestAddress=#VolumioURL#
-;UpdateRate=60
-;Timeout=5000
-;TimeoutValue=999999
-;IfBelowValue=10000
-;IfBelowAction=[!EnableMeasureGroup Volumio][!ShowMeterGroup *]
-;IfEqualValue=999999
-;IfEqualAction=[!DisableMeasureGroup Volumio][!HideMeterGroup *]
-;IfAboveValue=30000
-;IfAboveAction=[!DisableMeasureGroup Volumio][!HideMeterGroup *]
+[MeasureParent2]
+Measure=Plugin
+Plugin=WebParser
+Url=#VolumioURL#
+RegExp='(?:"time":"(.*?)","elapsed":"(.*?)".*"song_percent":(.*?),)|(?:"song_percent":(.*?),"elapsed":"(.*?)","time":(.*?),)'
+UpdateRate=1
+
+[MeasureParent3]
+Measure=Plugin
+Plugin=WebParser
+Url=#VolumioURL#
+RegExp='"currentartist":"*(.*?)"*,"currentsong":"*(.*?)"*,"currentalbum":"*(.*?)"*,'
+UpdateRate=1
 
 [MeasureTrack]
 Measure=Plugin
 Plugin=WebParser
-Url=[MeasureParent]
-StringIndex=8
+Url=[MeasureParent3]
+StringIndex=2
 UpdateRate=1
 Group=Volumio
 
 [MeasureAlbum]
 Measure=Plugin
 Plugin=WebParser
-Url=[MeasureParent]
-StringIndex=9
+Url=[MeasureParent3]
+StringIndex=3
 UpdateRate=1
 Group=Volumio
 
 [MeasureArtist]
 Measure=Plugin
 Plugin=WebParser
-Url=[MeasureParent]
-StringIndex=7
+Url=[MeasureParent3]
+StringIndex=1
 UpdateRate=1
 Group=Volumio
 
@@ -54,7 +61,6 @@ Group=Volumio
 ;UpdateRate=1
 ;RegExpSubstitute=1
 ;Substitute='(.*)"currentartist":"(.*?)"(.*)"currentalbum":"(.*?)"(.*)':"%userprofile%\My Music\\2\\4\\4.jpg"
-
 ;Format=([MeasureParent])
 ;RegExpSubstitute=1
 ;Substitute=
@@ -63,8 +69,8 @@ Group=Volumio
 [MeasureTimeDurationRaw]
 Measure=Plugin
 Plugin=WebParser
-Url=[MeasureParent]
-StringIndex=4
+Url=[MeasureParent2]
+StringIndex=1
 UpdateRate=1
 Substitute="":"1"
 Group=Volumio
@@ -80,8 +86,8 @@ Group=Volumio
 [MeasureTimePositionRaw]
 Measure=Plugin
 Plugin=WebParser
-Url=[MeasureParent]
-StringIndex=5
+Url=[MeasureParent2]
+StringIndex=2
 UpdateRate=1
 Substitute="":"0"
 Group=Volumio
@@ -97,8 +103,8 @@ Group=Volumio
 [MeasureTimeProgress]
 Measure=Plugin
 Plugin=WebParser
-Url=[MeasureParent]
-StringIndex=6
+Url=[MeasureParent2]
+StringIndex=3
 UpdateRate=1
 MinValue=0
 MaxValue=100
@@ -115,7 +121,7 @@ Group=Volumio
 [MeasureStateRaw]
 Measure=Plugin
 Plugin=WebParser
-Url=[MeasureParent]
+Url=[MeasureParent1]
 StringIndex=3
 UpdateRate=1
 Substitute="play":"1","pause":"2","stop":"0"
@@ -131,7 +137,7 @@ Group=Volumio
 [MeasureRepeat]
 Measure=Plugin
 Plugin=WebParser
-Url=[MeasureParent]
+Url=[MeasureParent1]
 StringIndex=1
 UpdateRate=1
 Group=Volumio
@@ -139,7 +145,7 @@ Group=Volumio
 [MeasureShuffleRaw]
 Measure=Plugin
 Plugin=WebParser
-Url=[MeasureParent]
+Url=[MeasureParent1]
 StringIndex=2
 UpdateRate=1
 Group=Volumio
