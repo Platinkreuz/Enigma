@@ -6,3 +6,6 @@ Desktop.ini
 
 # Private skin config file
 Options.inc
+
+# Google Calendar events
+GoogleCalendar*.xml
