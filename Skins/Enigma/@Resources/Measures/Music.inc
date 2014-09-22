@@ -22,6 +22,13 @@ Plugin=NowPlaying
 PlayerName=[MeasureMediaPlayer]
 PlayerType=ARTIST
 
+[MeasureComment]
+Measure=Script
+ScriptFile=#@#Measures\ExtractText.lua
+FileToRead=%userprofile%\Music\Comments.txt
+TrackPath=[MeasureMediaPlayer]
+IndexToReturn=2
+
 [MeasureCover]
 Measure=Plugin
 Plugin=NowPlaying

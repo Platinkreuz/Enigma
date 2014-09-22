@@ -27,7 +27,7 @@ UpdateRate=1
 Measure=Plugin
 Plugin=WebParser
 Url=#VolumioURL#
-RegExp='"currentartist":"*(.*?)"*,"currentsong":"*(.*?)"*,"currentalbum":"*(.*?)"*,'
+RegExp='"currentartist":(?:"(.*?)"|null),"currentsong":(?:"(.*?)"|null),"currentalbum":(?:"(.*?)"|null),'
 UpdateRate=1
 
 [MeasureTrack]
@@ -35,6 +35,7 @@ Measure=Plugin
 Plugin=WebParser
 Url=[MeasureParent3]
 StringIndex=2
+Substitute="null":""
 UpdateRate=1
 Group=Volumio
 
@@ -43,6 +44,7 @@ Measure=Plugin
 Plugin=WebParser
 Url=[MeasureParent3]
 StringIndex=3
+Substitute="null":""
 UpdateRate=1
 Group=Volumio
 
@@ -51,6 +53,7 @@ Measure=Plugin
 Plugin=WebParser
 Url=[MeasureParent3]
 StringIndex=1
+Substitute="null":""
 UpdateRate=1
 Group=Volumio
 
